@@ -100,17 +100,17 @@ export default function Page() {
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
             <span>Sent to</span>
-            <span>:</span>
+            <span className="ml-11">:</span>
           </span>
 
           {/* RIGHT */}
           <div className="flex items-center">
             <img
               src="https://i.ibb.co/dwqWqWTP/Chat-GPT-Image-May-1-2026-12-00-20-PM-removebg-preview.png"
-              className="w-[45px] ml-2"
+              className="w-[50px] ml-"
             />
 
-            <span className="mx-1">•</span>
+            <span className="mr-1">•</span>
 
             {/* 🔒 UPDATED MASK */}
             <span className="tracking-wide">
@@ -130,7 +130,7 @@ export default function Page() {
               src="https://i.ibb.co/dsmmrk1D/Chat-GPT-Image-Apr-30-2026-07-50-47-AM-removebg-preview.png"
               className="w-[25px] mr-2"
             />
-            <div className="text-[13px] font-normal">
+            <div className="text-[13px] font-normal ml-2">
               Transfer Details
             </div>
           </div>
