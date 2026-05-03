@@ -41,7 +41,7 @@ export default function Page() {
   return (
     <div className="bg-black min-h-screen font-sans text-white">
 
-      <meta name="theme-color" content="#2ad11e" />
+      <meta name="theme-color" content="#2e7d32" />
 
       {/* HEADER */}
       <div className="bg-[#3F8F3A] px-4 py-1 pt-12">
