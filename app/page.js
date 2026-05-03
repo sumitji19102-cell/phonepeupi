@@ -45,7 +45,7 @@ export default function Page() {
 
       {/* HEADER */}
       <div className="bg-[#3F8F3A] px-4 py-1 pt-12">
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
           <FiArrowLeft className="text-[22px]" />
           <div>
             <div className="text-[16px] font-semibold">
