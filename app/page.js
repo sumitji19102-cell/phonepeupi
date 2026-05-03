@@ -44,7 +44,7 @@ export default function Page() {
       <meta name="theme-color" content="#2ad11e" />
 
       {/* HEADER */}
-      <div className="bg-[#3F8F3A] px-4 py-1 pt-10">
+      <div className="bg-[#3F8F3A] px-4 py-1 pt-12">
         <div className="flex items-center gap-5">
           <FiArrowLeft className="text-[22px]" />
           <div>
