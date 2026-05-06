@@ -85,7 +85,7 @@ export default function Page() {
         </div>
 
         {/* BANK */}
-        <div className="flex items-center text-[14px] text-gray-300 font-normal">
+        <div className="flex items-center text-[14px] text-gray-300 font-extralight">
           Banking Name :
           <span className="ml-2 text-[14px] text-gray-300 font-normal">{name}</span>
           <img
@@ -100,7 +100,7 @@ export default function Page() {
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
             <span>Sent to</span>
-            <span className="ml-17">:</span>
+            <span className="ml-16">:</span>
           </span>
 
           {/* RIGHT */}
