@@ -16,68 +16,93 @@ export default function Page() {
 
   useEffect(() => {
     const now = new Date();
+
     const date = now.toLocaleDateString("en-IN", {
       day: "2-digit",
       month: "short",
       year: "numeric",
     });
+
     const time = now.toLocaleTimeString("en-IN", {
       hour: "2-digit",
       minute: "2-digit",
     });
+
     setDateTime(`${time} on ${date}`);
 
-    const randomUTR = Math.floor(100000000000 + Math.random() * 900000000000);
+    const randomUTR = Math.floor(
+      100000000000 + Math.random() * 900000000000
+    );
+
     setUtr(randomUTR.toString());
 
     let randomTxn = "T";
+
     for (let i = 0; i < 22; i++) {
       randomTxn += Math.floor(Math.random() * 10);
     }
+
     setTxnId(randomTxn);
 
   }, []);
 
   return (
-    <div className="bg-black min-h-screen font-sans text-white">
+    <div className="bg-black min-h-screen font-sans text-white font-bold">
 
       <meta name="theme-color" content="#2e7d32" />
 
       {/* HEADER */}
       <div className="bg-[#3F8F3A] px-4 py-1 pt-12">
+
         <div className="flex items-center gap-6">
-          <FiArrowLeft className="text-[22px]" />
+
+          <FiArrowLeft className="text-[22px] font-bold" />
+
           <div>
-            <div className="text-[16px] font-semibold">
+
+            <div className="text-[16px] font-bold">
               Transaction Successful
             </div>
-            <div className="text-[13px] opacity-90 font-normal mt-[-5px]">
+
+            <div className="text-[13px] opacity-90 font-bold mt-[-5px]">
               {dateTime}
             </div>
+
           </div>
+
         </div>
+
       </div>
 
       {/* CARD */}
       <div className="mt-2 bg-[#171717] rounded-[14px] p-3 px-4 mx-2 ">
 
-        <div className="text-[17px] font-bold">Paid to</div>
+        <div className="text-[15px] font-bold">
+          Paid to
+        </div>
 
         <div className="flex items-center mt-3">
-          <div className="w-11 h-11 rounded-full bg-[#49A7F3] flex items-center justify-center font-normal mr-3">
+
+          <div className="w-11 h-11 rounded-full bg-[#49A7F3] flex items-center justify-center font-bold mr-3">
             {name.slice(0,2).toUpperCase()}
           </div>
 
           <div className="flex-1">
-            <div className="text-[17px] font-normal">
+
+            <div className="text-[16px] font-bold">
               {name}
             </div>
-            <div className="text-[16px] mt-[-4px] text-gray-300 font-normal">
+
+            <div className="text-[13px] text-gray-400 font-bold">
               {upi}
             </div>
+
           </div>
 
-          <div className="text-[16px] font-bold">₹15</div>
+          <div className="text-[16px] font-bold">
+            ₹15
+          </div>
+
         </div>
 
         <div className="flex justify-center my-3">
@@ -85,38 +110,49 @@ export default function Page() {
         </div>
 
         {/* BANK */}
-        <div className="flex items-center text-[14px] text-gray-300 font-light">
+        <div className="flex items-center text-[12px] text-gray-400 font-bold">
+
           Banking Name :
-          <span className="ml-2 text-[14px] text-gray-300 font-normal">{name}</span>
+
+          <span className="ml-2 text-[12px] text-gray-400 font-bold">
+            {name}
+          </span>
+
           <img
             src="https://i.ibb.co/wrx1Dh17/Chat-GPT-Image-Apr-30-2026-04-11-39-PM-removebg-preview.png"
-            className="w-[29px]"
+            className="w-[24px]"
           />
+
         </div>
 
-        {/* ✅ FIXED SENT TO */}
-        <div className="flex items-center text-[14px] text-gray-300 font-normal mt-1">
+        {/* SENT TO */}
+        <div className="flex items-center text-[12px] text-gray-400 font-bold mt-1">
 
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
+
             <span>Sent to</span>
-            <span className="ml-16">:</span>
+
+            <span className="ml-11">:</span>
+
           </span>
 
           {/* RIGHT */}
           <div className="flex items-center">
+
             <img
               src="https://i.ibb.co/dwqWqWTP/Chat-GPT-Image-May-1-2026-12-00-20-PM-removebg-preview.png"
-              className="w-[65px] ml-"
+              className="w-[60px] ml-"
             />
 
             <span className="mr-1">•</span>
 
-            {/* 🔒 UPDATED MASK */}
-            <span className="tracking-wide ">
+            <span className="tracking-wide font-bold">
               {"XXXXXX" + upi.slice(6)}
             </span>
+
           </div>
+
         </div>
 
         <div className="flex justify-center my-3">
@@ -125,25 +161,32 @@ export default function Page() {
 
         {/* TRANSFER */}
         <div className="flex justify-between items-center mt-4">
+
           <div className="flex items-center">
+
             <img
               src="https://i.ibb.co/dsmmrk1D/Chat-GPT-Image-Apr-30-2026-07-50-47-AM-removebg-preview.png"
               className="w-[25px] mr-2"
             />
-            <div className="text-[13px] font-normal ml-2">
+
+            <div className="text-[13px] font-bold ml-2">
               Transfer Details
             </div>
+
           </div>
-          <IoIosArrowUp className="text-xl" />
+
+          <IoIosArrowUp className="text-xl font-bold" />
+
         </div>
 
         {/* TXN */}
-        <div className="mt-3 text-[13px] text-gray-400 font-normal">
+        <div className="mt-3 text-[13px] text-gray-400 font-bold">
           Transaction ID
         </div>
 
         <div className="flex justify-between ">
-          <div className="text-[13px] font-normal">
+
+          <div className="text-[13px] font-bold">
             {txnId}
           </div>
 
@@ -151,29 +194,38 @@ export default function Page() {
             src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
             className="w-[40px] mt-[-5px]"
           />
+
         </div>
 
         {/* DEBIT */}
-        <div className=" text-[13px] text-gray-400 font-normal">
+        <div className=" text-[13px] text-gray-400 font-bold">
           Debited from
         </div>
 
         <div className="flex items-start ">
+
           <img
             src="https://play-lh.googleusercontent.com/dYccpbwJFL2BXc1YsOSCPjNX9CmGwqvjB-hMtkCltd9ijBQcyEu5c8sJNyTbNBXnOgI"
             className="w-7 h-7 rounded-lg mr-2 mt-1"
           />
 
           <div className="flex-1">
+
             <div className="flex justify-between">
-              <div className="text-[14px] font-normal">
+
+              <div className="text-[14px] font-bold">
                 XXXXXXX4987
               </div>
-              <div className="font-normal">₹15</div>
+
+              <div className="font-bold">
+                ₹15
+              </div>
+
             </div>
 
             <div className="flex justify-between mt-1">
-              <div className="text-[14px] text-gray-400 font-normal">
+
+              <div className="text-[14px] text-gray-400 font-bold">
                 UTR: {utr}
               </div>
 
@@ -181,8 +233,11 @@ export default function Page() {
                 src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
                 className="w-[40px] mt-[-5px]"
               />
+
             </div>
+
           </div>
+
         </div>
 
         <div className="flex justify-center my-3">
@@ -190,45 +245,61 @@ export default function Page() {
         </div>
 
         {/* IMAGE */}
-        <div className="flex justify-center mb-3">
+        <div className="flex justify-center mb-1">
+
           <img
-            src="https://i.ibb.co/fYgRy6dT/photo-2026-04-21-12-37-47-removebg-preview-1-1.png"
+            src="https://i.ibb.co/4nZyL5xZ/Chat-GPT-Image-May-6-2026-03-14-49-PM-removebg-preview.png"
             className="w-full"
           />
+
         </div>
 
       </div>
 
       {/* SUPPORT */}
       <div className="m-3 mt-2 bg-[#171717] rounded-[14px] p-4 flex justify-between items-center">
+
         <div className="flex items-center">
-          <LuMessageCircleQuestion className="mr-2" />
-          <div className="text-[13px] ml-6"> Contact PhonePe Support</div> 
+
+          <LuMessageCircleQuestion className="mr-2 font-bold" />
+
+          <div className="text-[13px] ml-6 font-bold">
+            Contact PhonePe Support
+          </div>
+
         </div>
-        <MdKeyboardArrowRight className="text-2xl"/>
+
+        <MdKeyboardArrowRight className="text-2xl font-bold"/>
+
       </div>
 
       {/* FOOTER */}
-      <div className="text-center text-[12px] text-gray-400 mt-5 flex flex-col items-center">
+      <div className="text-center text-[12px] text-gray-400 mt-5 flex flex-col items-center font-bold">
+
         <span>Powered by</span>
+
         <img
           src="https://i.ibb.co/ZzNzJVZ8/Chat-GPT-Image-Apr-30-2026-04-24-56-PM-1.png"
           className="w-[110px] mt-[-2px]"
         />
+
       </div>
 
       {/* INPUTS */}
       <div className="p-3 space-y-2 mt-[250px]">
+
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 rounded bg-[#1f1f1f]"
+          className="w-full p-2 rounded bg-[#1f1f1f] font-bold"
         />
+
         <input
           value={upi}
           onChange={(e) => setUpi(e.target.value)}
-          className="w-full p-2 rounded bg-[#1f1f1f]"
+          className="w-full p-2 rounded bg-[#1f1f1f] font-bold"
         />
+
       </div>
 
     </div>
