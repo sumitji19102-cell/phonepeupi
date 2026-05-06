@@ -90,7 +90,7 @@ export default function Page() {
           <span className="ml-2 text-[14px] text-gray-300 font-normal">{name}</span>
           <img
             src="https://i.ibb.co/wrx1Dh17/Chat-GPT-Image-Apr-30-2026-04-11-39-PM-removebg-preview.png"
-            className="w-[24px]"
+            className="w-[29px]"
           />
         </div>
 
@@ -100,7 +100,7 @@ export default function Page() {
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
             <span>Sent to</span>
-            <span className="ml-15">:</span>
+            <span className="ml-17">:</span>
           </span>
 
           {/* RIGHT */}
