@@ -85,7 +85,7 @@ export default function Page() {
         </div>
 
         {/* BANK */}
-        <div className="flex items-center text-[14px] text-gray-300 font-extralight">
+        <div className="flex items-center text-[14px] text-gray-300 font-light">
           Banking Name :
           <span className="ml-2 text-[14px] text-gray-300 font-normal">{name}</span>
           <img
