@@ -110,11 +110,11 @@ export default function Page() {
         </div>
 
         {/* BANK */}
-        <div className="flex items-center text-[12px] text-gray-400 font-bold">
+        <div className="flex items-center text-[13px] text-gray-400 font-bold">
 
           Banking Name :
 
-          <span className="ml-2 text-[12px] text-gray-400 font-bold">
+          <span className="ml-2 text-[13px] text-gray-400 font-bold">
             {name}
           </span>
 
@@ -126,7 +126,7 @@ export default function Page() {
         </div>
 
         {/* SENT TO */}
-        <div className="flex items-center text-[12px] text-gray-400 font-bold mt-1">
+        <div className="flex items-center text-[13px] text-gray-400 font-bold mt-1">
 
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
@@ -169,7 +169,7 @@ export default function Page() {
               className="w-[25px] mr-2"
             />
 
-            <div className="text-[13px] font-bold ml-2">
+            <div className="text-[14px] font-bold ml-2">
               Transfer Details
             </div>
 
@@ -180,13 +180,13 @@ export default function Page() {
         </div>
 
         {/* TXN */}
-        <div className="mt-3 text-[13px] text-gray-400 font-bold">
+        <div className="mt-3 text-[14px] text-gray-400 font-bold">
           Transaction ID
         </div>
 
         <div className="flex justify-between ">
 
-          <div className="text-[13px] font-bold">
+          <div className="text-[14px] font-bold">
             {txnId}
           </div>
 
@@ -198,7 +198,7 @@ export default function Page() {
         </div>
 
         {/* DEBIT */}
-        <div className=" text-[13px] text-gray-400 font-bold">
+        <div className=" text-[14px] text-gray-400 font-bold">
           Debited from
         </div>
 
@@ -213,11 +213,11 @@ export default function Page() {
 
             <div className="flex justify-between">
 
-              <div className="text-[14px] font-bold">
+              <div className="text-[15px] font-bold">
                 XXXXXXX4987
               </div>
 
-              <div className="font-bold">
+              <div className="font-bold text-[15px]">
                 ₹15
               </div>
 
@@ -225,7 +225,7 @@ export default function Page() {
 
             <div className="flex justify-between mt-1">
 
-              <div className="text-[14px] text-gray-400 font-bold">
+              <div className="text-[15px] text-gray-400 font-bold">
                 UTR: {utr}
               </div>
 
@@ -263,7 +263,7 @@ export default function Page() {
 
           <LuMessageCircleQuestion className="mr-2 font-bold" />
 
-          <div className="text-[13px] ml-6 font-bold">
+          <div className="text-[14px] ml-6 font-bold">
             Contact PhonePe Support
           </div>
 
@@ -274,7 +274,7 @@ export default function Page() {
       </div>
 
       {/* FOOTER */}
-      <div className="text-center text-[12px] text-gray-400 mt-5 flex flex-col items-center font-bold">
+      <div className="text-center text-[13px] text-gray-400 mt-5 flex flex-col items-center font-bold">
 
         <span>Powered by</span>
 
