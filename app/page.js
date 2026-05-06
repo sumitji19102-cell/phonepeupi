@@ -72,7 +72,7 @@ export default function Page() {
             <div className="text-[17px] font-normal">
               {name}
             </div>
-            <div className="text-[16px] text-gray-300 font-normal">
+            <div className="text-[16px] text-zinc-300 font-normal">
               {upi}
             </div>
           </div>
