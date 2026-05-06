@@ -132,7 +132,7 @@ export default function Page() {
 
             <span>Sent to</span>
 
-            <span className="ml-11">:</span>
+            <span className="ml-16">:</span>
 
           </span>
 
@@ -189,8 +189,8 @@ export default function Page() {
           </div>
 
           <img
-            src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
-            className="w-[45px] mt-[-10px] mr-[-10px]"
+           src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
+                className="w-[50px] mt-[-10px] mr-[-8px]"
           />
 
         </div>
@@ -229,7 +229,7 @@ export default function Page() {
 
               <img
                 src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
-                className="w-[45px] mt-[-10px] mr-[-8px]"
+                className="w-[50px] mt-[-10px] mr-[-8px]"
               />
 
             </div>
