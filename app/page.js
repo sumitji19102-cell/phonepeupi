@@ -47,7 +47,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen font-sans text-white font-bold">
+    <div className="bg-black min-h-screen font-sans text-white font-bold tracking-wide">
 
       <meta name="theme-color" content="#2e7d32" />
 
@@ -56,15 +56,15 @@ export default function Page() {
 
         <div className="flex items-center gap-6">
 
-          <FiArrowLeft className="text-[22px] font-bold" />
+          <FiArrowLeft className="text-[22px] font-bold tracking-wide" />
 
           <div>
 
-            <div className="text-[16px] font-bold">
+            <div className="text-[16px] font-bold tracking-wide">
               Transaction Successful
             </div>
 
-            <div className="text-[13px] opacity-90 font-bold mt-[-5px]">
+            <div className="text-[13px] opacity-90 font-bold mt-[-5px] tracking-wide">
               {dateTime}
             </div>
 
@@ -77,29 +77,29 @@ export default function Page() {
       {/* CARD */}
       <div className="mt-2 bg-[#171717] rounded-[14px] p-3 px-4 mx-2 ">
 
-        <div className="text-[15px] font-bold">
+        <div className="text-[15px] font-bold tracking-wide">
           Paid to
         </div>
 
         <div className="flex items-center mt-3">
 
-          <div className="w-11 h-11 rounded-full bg-[#49A7F3] flex items-center justify-center font-bold mr-3">
+          <div className="w-11 h-11 rounded-full bg-[#49A7F3] flex items-center justify-center font-bold tracking-wide mr-3">
             {name.slice(0,2).toUpperCase()}
           </div>
 
           <div className="flex-1">
 
-            <div className="text-[16px] font-bold">
+            <div className="text-[16px] font-bold tracking-wide">
               {name}
             </div>
 
-            <div className="text-[13px] text-gray-400 font-bold">
+            <div className="text-[13px] text-gray-400 font-bold tracking-wide">
               {upi}
             </div>
 
           </div>
 
-          <div className="text-[16px] font-bold">
+          <div className="text-[16px] font-bold tracking-wide">
             ₹15
           </div>
 
@@ -110,11 +110,11 @@ export default function Page() {
         </div>
 
         {/* BANK */}
-        <div className="flex items-center text-[13px] text-gray-400 font-bold">
+        <div className="flex items-center text-[13px] text-gray-400 font-bold tracking-wide">
 
           Banking Name :
 
-          <span className="ml-2 text-[13px] text-gray-400 font-bold">
+          <span className="ml-2 text-[13px] text-gray-400 font-bold tracking-wide">
             {name}
           </span>
 
@@ -126,9 +126,8 @@ export default function Page() {
         </div>
 
         {/* SENT TO */}
-        <div className="flex items-center text-[13px] text-gray-400 font-bold mt-1">
+        <div className="flex items-center text-[13px] text-gray-400 font-bold tracking-wide mt-1">
 
-          {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
 
             <span>Sent to</span>
@@ -137,7 +136,6 @@ export default function Page() {
 
           </span>
 
-          {/* RIGHT */}
           <div className="flex items-center">
 
             <img
@@ -169,24 +167,24 @@ export default function Page() {
               className="w-[25px] mr-2"
             />
 
-            <div className="text-[14px] font-bold ml-2">
+            <div className="text-[14px] font-bold tracking-wide ml-2">
               Transfer Details
             </div>
 
           </div>
 
-          <IoIosArrowUp className="text-xl font-bold" />
+          <IoIosArrowUp className="text-xl font-bold tracking-wide" />
 
         </div>
 
         {/* TXN */}
-        <div className="mt-3 text-[14px] text-gray-400 font-bold">
+        <div className="mt-3 text-[14px] text-gray-400 font-bold tracking-wide">
           Transaction ID
         </div>
 
         <div className="flex justify-between ">
 
-          <div className="text-[14px] font-bold tracking-wide">
+          <div className="text-[16px] font-bold tracking-wide">
             {txnId}
           </div>
 
@@ -198,7 +196,7 @@ export default function Page() {
         </div>
 
         {/* DEBIT */}
-        <div className=" text-[14px] text-gray-400 font-bold">
+        <div className=" text-[14px] text-gray-400 font-bold tracking-wide">
           Debited from
         </div>
 
@@ -213,11 +211,11 @@ export default function Page() {
 
             <div className="flex justify-between ">
 
-              <div className="text-[15px] font-bold ml-2">
+              <div className="text-[16px] font-bold tracking-wide ml-2">
                 XXXXXXX4987
               </div>
 
-              <div className="font-bold text-[15px]">
+              <div className="font-bold text-[16px] tracking-wide">
                 ₹15
               </div>
 
@@ -225,7 +223,7 @@ export default function Page() {
 
             <div className="flex justify-between mt-1 ml-2 ">
 
-              <div className="text-[15px] text-gray-400 font-bold tracking-wide">
+              <div className="text-[16px] text-gray-400 font-bold tracking-wide">
                 UTR: {utr}
               </div>
 
@@ -261,20 +259,20 @@ export default function Page() {
 
         <div className="flex items-center">
 
-          <LuMessageCircleQuestion className="mr-2 font-bold" />
+          <LuMessageCircleQuestion className="mr-2 font-bold tracking-wide" />
 
-          <div className="text-[14px] ml-6 font-bold">
+          <div className="text-[14px] ml-6 font-bold tracking-wide">
             Contact PhonePe Support
           </div>
 
         </div>
 
-        <MdKeyboardArrowRight className="text-2xl font-bold"/>
+        <MdKeyboardArrowRight className="text-2xl font-bold tracking-wide"/>
 
       </div>
 
       {/* FOOTER */}
-      <div className="text-center text-[13px] text-gray-400 mt-5 flex flex-col items-center font-bold">
+      <div className="text-center text-[13px] text-gray-400 mt-5 flex flex-col items-center font-bold tracking-wide">
 
         <span>Powered by</span>
 
@@ -291,13 +289,13 @@ export default function Page() {
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full p-2 rounded bg-[#1f1f1f] font-bold"
+          className="w-full p-2 rounded bg-[#1f1f1f] font-bold tracking-wide"
         />
 
         <input
           value={upi}
           onChange={(e) => setUpi(e.target.value)}
-          className="w-full p-2 rounded bg-[#1f1f1f] font-bold"
+          className="w-full p-2 rounded bg-[#1f1f1f] font-bold tracking-wide"
         />
 
       </div>
