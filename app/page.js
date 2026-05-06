@@ -99,7 +99,7 @@ export default function Page() {
 
           </div>
 
-          <div className="text-[16px] font-bold tracking-wide">
+          <div className="text-[17px] font-bold tracking-wide">
             ₹15
           </div>
 
@@ -190,7 +190,7 @@ export default function Page() {
 
           <img
             src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
-            className="w-[40px] mt-[-5px]"
+            className="w-[45px] mt-[-10px] mr-[-10px]"
           />
 
         </div>
@@ -204,7 +204,7 @@ export default function Page() {
 
           <img
             src="https://play-lh.googleusercontent.com/dYccpbwJFL2BXc1YsOSCPjNX9CmGwqvjB-hMtkCltd9ijBQcyEu5c8sJNyTbNBXnOgI"
-            className="w-7 h-7 rounded-lg mr-2 mt-1"
+            className="w-8 h-8 rounded-lg mr-2 mt-1"
           />
 
           <div className="flex-1 ">
@@ -215,7 +215,7 @@ export default function Page() {
                 XXXXXXX4987
               </div>
 
-              <div className="font-bold text-[16px] tracking-wide">
+              <div className="font-bold text-[17px] tracking-wide">
                 ₹15
               </div>
 
@@ -229,7 +229,7 @@ export default function Page() {
 
               <img
                 src="https://i.ibb.co/ym78vn9x/Chat-GPT-Image-Apr-30-2026-06-07-08-AM-removebg-preview.png"
-                className="w-[40px] mt-[-5px]"
+                className="w-[45px] mt-[-10px] mr-[-10px]"
               />
 
             </div>
