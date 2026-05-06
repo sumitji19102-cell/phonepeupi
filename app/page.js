@@ -100,7 +100,7 @@ export default function Page() {
           {/* LEFT */}
           <span className="min-w-[85px] flex justify-between">
             <span>Sent to</span>
-            <span className="ml-11">:</span>
+            <span className="ml-15">:</span>
           </span>
 
           {/* RIGHT */}
