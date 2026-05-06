@@ -186,7 +186,7 @@ export default function Page() {
 
         <div className="flex justify-between ">
 
-          <div className="text-[14px] font-bold">
+          <div className="text-[14px] font-bold tracking-wide">
             {txnId}
           </div>
 
@@ -209,11 +209,11 @@ export default function Page() {
             className="w-7 h-7 rounded-lg mr-2 mt-1"
           />
 
-          <div className="flex-1">
+          <div className="flex-1 ">
 
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
 
-              <div className="text-[15px] font-bold">
+              <div className="text-[15px] font-bold ml-2">
                 XXXXXXX4987
               </div>
 
@@ -223,9 +223,9 @@ export default function Page() {
 
             </div>
 
-            <div className="flex justify-between mt-1">
+            <div className="flex justify-between mt-1 ml-2 ">
 
-              <div className="text-[15px] text-gray-400 font-bold">
+              <div className="text-[15px] text-gray-400 font-bold tracking-wide">
                 UTR: {utr}
               </div>
 
