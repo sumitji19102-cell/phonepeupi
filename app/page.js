@@ -259,7 +259,7 @@ export default function Page() {
 
         <div className="flex items-center">
 
-          <LuMessageCircleQuestion className="mr-2 font-bold tracking-wide" />
+          <LuMessageCircleQuestion className="mr-2 text-xl font-bold tracking-wide" />
 
           <div className="text-[14px] ml-6 font-bold tracking-wide">
             Contact PhonePe Support
