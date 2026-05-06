@@ -209,7 +209,7 @@ export default function Page() {
       </div>
 
       {/* FOOTER */}
-      <div className="text-center text-[10px] text-gray-500 mt-5 flex flex-col items-center">
+      <div className="text-center text-[13px] text-gray-300 mt-5 flex flex-col items-center">
         <span>Powered by</span>
         <img
           src="https://i.ibb.co/ZzNzJVZ8/Chat-GPT-Image-Apr-30-2026-04-24-56-PM-1.png"
